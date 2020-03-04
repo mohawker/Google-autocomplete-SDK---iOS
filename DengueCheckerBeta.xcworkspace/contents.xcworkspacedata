@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/mohawker/Documents/GitHub/Google-autocomplete-SDK---iOS/DengueCheckerBeta.xcodeproj">
+      location = "group:DengueCheckerBeta.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

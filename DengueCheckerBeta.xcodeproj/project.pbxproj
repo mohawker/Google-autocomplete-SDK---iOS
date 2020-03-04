@@ -1,0 +1,1004 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CBAA2B021917C91006A2587 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBAA2AF21917C91006A2587 /* AppDelegate.swift */; };
+		1CBAA2B521917C92006A2587 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CBAA2B321917C92006A2587 /* Main.storyboard */; };
+		1CBAA2B721917C94006A2587 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CBAA2B621917C94006A2587 /* Assets.xcassets */; };
+		1CBAA2BA21917C94006A2587 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CBAA2B821917C94006A2587 /* LaunchScreen.storyboard */; };
+		1CBAA2C521917C94006A2587 /* placeAutocompleteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBAA2C421917C94006A2587 /* placeAutocompleteTests.swift */; };
+		1CBAA2D021917C94006A2587 /* placeAutocompleteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBAA2CF21917C94006A2587 /* placeAutocompleteUITests.swift */; };
+		1CBAA2DE219180FF006A2587 /* GoogleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBAA2DD219180FF006A2587 /* GoogleMapViewController.swift */; };
+		203D21F807674E76B4BC6147 /* libPods-DengueCheckerBeta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04BD8CCA4CCCBE9706852914 /* libPods-DengueCheckerBeta.a */; };
+		2D1D5780240D7746003AAE20 /* dengue.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 2D1D577E240D7746003AAE20 /* dengue.geojson */; };
+		2D1D5781240D7746003AAE20 /* dengue.kml in Resources */ = {isa = PBXBuildFile; fileRef = 2D1D577F240D7746003AAE20 /* dengue.kml */; };
+		2D7A1E4923DDD6FE000E8221 /* GQTPointQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1E0023DDD6FE000E8221 /* GQTPointQuadTree.m */; };
+		2D7A1E4A23DDD6FE000E8221 /* GQTPointQuadTreeChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1E0223DDD6FE000E8221 /* GQTPointQuadTreeChild.m */; };
+		2D7A1E4B23DDD6FE000E8221 /* GMUWeightedLatLng.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1E0923DDD6FE000E8221 /* GMUWeightedLatLng.m */; };
+		2D7A1E4C23DDD6FE000E8221 /* GMUGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1E0C23DDD6FE000E8221 /* GMUGradient.m */; };
+		2D7A1E4D23DDD6FE000E8221 /* GMUHeatmapTileLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1E0D23DDD6FE000E8221 /* GMUHeatmapTileLayer.m */; };
+		2D7A1E4E23DDD6FE000E8221 /* GMUClusterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1E0F23DDD6FE000E8221 /* GMUClusterManager.m */; };
+		2D7A1E4F23DDD6FE000E8221 /* GMUGridBasedClusterAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1E1323DDD6FE000E8221 /* GMUGridBasedClusterAlgorithm.m */; };
+		2D7A1E5023DDD6FE000E8221 /* GMUWrappingDictionaryKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1E1623DDD6FE000E8221 /* GMUWrappingDictionaryKey.m */; };
+		2D7A1E5123DDD6FE000E8221 /* GMUSimpleClusterAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1E1723DDD6FE000E8221 /* GMUSimpleClusterAlgorithm.m */; };
+		2D7A1E5223DDD6FE000E8221 /* GMUNonHierarchicalDistanceBasedAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1E1923DDD6FE000E8221 /* GMUNonHierarchicalDistanceBasedAlgorithm.m */; };
+		2D7A1E5323DDD6FE000E8221 /* GMUDefaultClusterRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1E2223DDD6FE000E8221 /* GMUDefaultClusterRenderer.m */; };
+		2D7A1E5423DDD6FE000E8221 /* GMUDefaultClusterIconGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1E2423DDD6FE000E8221 /* GMUDefaultClusterIconGenerator.m */; };
+		2D7A1E5523DDD6FE000E8221 /* GMUStaticCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1E2723DDD6FE000E8221 /* GMUStaticCluster.m */; };
+		2D7A1E5623DDD6FE000E8221 /* GMUKMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1E2B23DDD6FE000E8221 /* GMUKMLParser.m */; };
+		2D7A1E5723DDD6FE000E8221 /* GMUGeometryRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1E2C23DDD6FE000E8221 /* GMUGeometryRenderer.m */; };
+		2D7A1E5823DDD6FE000E8221 /* GMUGeometryCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1E2F23DDD6FE000E8221 /* GMUGeometryCollection.m */; };
+		2D7A1E5923DDD6FE000E8221 /* GMUPlacemark.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1E3223DDD6FE000E8221 /* GMUPlacemark.m */; };
+		2D7A1E5A23DDD6FE000E8221 /* GMUPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1E3323DDD6FE000E8221 /* GMUPolygon.m */; };
+		2D7A1E5B23DDD6FE000E8221 /* GMUStyleMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1E3623DDD6FE000E8221 /* GMUStyleMap.m */; };
+		2D7A1E5C23DDD6FE000E8221 /* GMUFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1E3723DDD6FE000E8221 /* GMUFeature.m */; };
+		2D7A1E5D23DDD6FE000E8221 /* GMUGroundOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1E3923DDD6FE000E8221 /* GMUGroundOverlay.m */; };
+		2D7A1E5E23DDD6FE000E8221 /* GMUStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1E3A23DDD6FE000E8221 /* GMUStyle.m */; };
+		2D7A1E5F23DDD6FE000E8221 /* GMUPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1E3B23DDD6FE000E8221 /* GMUPoint.m */; };
+		2D7A1E6023DDD6FE000E8221 /* GMUPair.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1E3E23DDD6FE000E8221 /* GMUPair.m */; };
+		2D7A1E6123DDD6FE000E8221 /* GMULineString.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1E4323DDD6FE000E8221 /* GMULineString.m */; };
+		2D7A1E6223DDD6FE000E8221 /* GMUGeoJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1E4723DDD6FE000E8221 /* GMUGeoJSONParser.m */; };
+		83140CB20C6BCFDB29D4B524 /* libPods-DengueCheckerBetaUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B745F54D0E20518346049E /* libPods-DengueCheckerBetaUITests.a */; };
+		8604F6304253EF9042657BFC /* libPods-DengueCheckerBetaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2B5AD7AADC01154882CC24 /* libPods-DengueCheckerBetaTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CBAA2C121917C94006A2587 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CBAA2A421917C91006A2587 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CBAA2AB21917C91006A2587;
+			remoteInfo = placeAutocomplete;
+		};
+		1CBAA2CC21917C94006A2587 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CBAA2A421917C91006A2587 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CBAA2AB21917C91006A2587;
+			remoteInfo = placeAutocomplete;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04BD8CCA4CCCBE9706852914 /* libPods-DengueCheckerBeta.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DengueCheckerBeta.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CBAA2AC21917C91006A2587 /* DengueCheckerBeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DengueCheckerBeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CBAA2AF21917C91006A2587 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1CBAA2B421917C92006A2587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CBAA2B621917C94006A2587 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CBAA2B921917C94006A2587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1CBAA2BB21917C94006A2587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "/Users/mohawker/Documents/GitHub/Google-autocomplete-SDK---iOS/DengueCheckerBeta/Info.plist"; sourceTree = "<absolute>"; };
+		1CBAA2C021917C94006A2587 /* DengueCheckerBetaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DengueCheckerBetaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CBAA2C421917C94006A2587 /* placeAutocompleteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeAutocompleteTests.swift; sourceTree = "<group>"; };
+		1CBAA2C621917C94006A2587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CBAA2CB21917C94006A2587 /* DengueCheckerBetaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DengueCheckerBetaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CBAA2CF21917C94006A2587 /* placeAutocompleteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeAutocompleteUITests.swift; sourceTree = "<group>"; };
+		1CBAA2D121917C95006A2587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CBAA2DD219180FF006A2587 /* GoogleMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapViewController.swift; sourceTree = "<group>"; };
+		2446298B343B728F4739ADD7 /* Pods-DengueCheckerBetaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DengueCheckerBetaTests.release.xcconfig"; path = "Target Support Files/Pods-DengueCheckerBetaTests/Pods-DengueCheckerBetaTests.release.xcconfig"; sourceTree = "<group>"; };
+		2D1D577E240D7746003AAE20 /* dengue.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dengue.geojson; sourceTree = "<group>"; };
+		2D1D577F240D7746003AAE20 /* dengue.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dengue.kml; sourceTree = "<group>"; };
+		2D476E2E240EA095003342DC /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D476E32240EA098003342DC /* SwiftSoup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftSoup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D476E35240EA09A003342DC /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D7A1E0023DDD6FE000E8221 /* GQTPointQuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQTPointQuadTree.m; sourceTree = "<group>"; };
+		2D7A1E0123DDD6FE000E8221 /* GQTPointQuadTreeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQTPointQuadTreeItem.h; sourceTree = "<group>"; };
+		2D7A1E0223DDD6FE000E8221 /* GQTPointQuadTreeChild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQTPointQuadTreeChild.m; sourceTree = "<group>"; };
+		2D7A1E0323DDD6FE000E8221 /* GQTPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQTPoint.h; sourceTree = "<group>"; };
+		2D7A1E0423DDD6FE000E8221 /* GQTPointQuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQTPointQuadTree.h; sourceTree = "<group>"; };
+		2D7A1E0523DDD6FE000E8221 /* GQTPointQuadTreeChild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQTPointQuadTreeChild.h; sourceTree = "<group>"; };
+		2D7A1E0623DDD6FE000E8221 /* GQTBounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQTBounds.h; sourceTree = "<group>"; };
+		2D7A1E0823DDD6FE000E8221 /* GMUGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUGradient.h; sourceTree = "<group>"; };
+		2D7A1E0923DDD6FE000E8221 /* GMUWeightedLatLng.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUWeightedLatLng.m; sourceTree = "<group>"; };
+		2D7A1E0A23DDD6FE000E8221 /* GMUHeatmapTileLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUHeatmapTileLayer.h; sourceTree = "<group>"; };
+		2D7A1E0B23DDD6FE000E8221 /* GMUWeightedLatLng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUWeightedLatLng.h; sourceTree = "<group>"; };
+		2D7A1E0C23DDD6FE000E8221 /* GMUGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUGradient.m; sourceTree = "<group>"; };
+		2D7A1E0D23DDD6FE000E8221 /* GMUHeatmapTileLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUHeatmapTileLayer.m; sourceTree = "<group>"; };
+		2D7A1E0F23DDD6FE000E8221 /* GMUClusterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUClusterManager.m; sourceTree = "<group>"; };
+		2D7A1E1023DDD6FE000E8221 /* GMUStaticCluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUStaticCluster.h; sourceTree = "<group>"; };
+		2D7A1E1123DDD6FE000E8221 /* GMUMarkerClustering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUMarkerClustering.h; sourceTree = "<group>"; };
+		2D7A1E1323DDD6FE000E8221 /* GMUGridBasedClusterAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUGridBasedClusterAlgorithm.m; sourceTree = "<group>"; };
+		2D7A1E1423DDD6FE000E8221 /* GMUClusterAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUClusterAlgorithm.h; sourceTree = "<group>"; };
+		2D7A1E1523DDD6FE000E8221 /* GMUNonHierarchicalDistanceBasedAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUNonHierarchicalDistanceBasedAlgorithm.h; sourceTree = "<group>"; };
+		2D7A1E1623DDD6FE000E8221 /* GMUWrappingDictionaryKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUWrappingDictionaryKey.m; sourceTree = "<group>"; };
+		2D7A1E1723DDD6FE000E8221 /* GMUSimpleClusterAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUSimpleClusterAlgorithm.m; sourceTree = "<group>"; };
+		2D7A1E1823DDD6FE000E8221 /* GMUGridBasedClusterAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUGridBasedClusterAlgorithm.h; sourceTree = "<group>"; };
+		2D7A1E1923DDD6FE000E8221 /* GMUNonHierarchicalDistanceBasedAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUNonHierarchicalDistanceBasedAlgorithm.m; sourceTree = "<group>"; };
+		2D7A1E1A23DDD6FE000E8221 /* GMUSimpleClusterAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUSimpleClusterAlgorithm.h; sourceTree = "<group>"; };
+		2D7A1E1B23DDD6FE000E8221 /* GMUWrappingDictionaryKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUWrappingDictionaryKey.h; sourceTree = "<group>"; };
+		2D7A1E1C23DDD6FE000E8221 /* GMUClusterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUClusterManager.h; sourceTree = "<group>"; };
+		2D7A1E1D23DDD6FE000E8221 /* GMUClusterManager+Testing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GMUClusterManager+Testing.h"; sourceTree = "<group>"; };
+		2D7A1E1F23DDD6FE000E8221 /* GMUClusterIconGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUClusterIconGenerator.h; sourceTree = "<group>"; };
+		2D7A1E2023DDD6FE000E8221 /* GMUClusterRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUClusterRenderer.h; sourceTree = "<group>"; };
+		2D7A1E2123DDD6FE000E8221 /* GMUDefaultClusterRenderer+Testing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GMUDefaultClusterRenderer+Testing.h"; sourceTree = "<group>"; };
+		2D7A1E2223DDD6FE000E8221 /* GMUDefaultClusterRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUDefaultClusterRenderer.m; sourceTree = "<group>"; };
+		2D7A1E2323DDD6FE000E8221 /* GMUDefaultClusterIconGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUDefaultClusterIconGenerator.h; sourceTree = "<group>"; };
+		2D7A1E2423DDD6FE000E8221 /* GMUDefaultClusterIconGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUDefaultClusterIconGenerator.m; sourceTree = "<group>"; };
+		2D7A1E2523DDD6FE000E8221 /* GMUDefaultClusterRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUDefaultClusterRenderer.h; sourceTree = "<group>"; };
+		2D7A1E2623DDD6FE000E8221 /* GMUDefaultClusterIconGenerator+Testing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GMUDefaultClusterIconGenerator+Testing.h"; sourceTree = "<group>"; };
+		2D7A1E2723DDD6FE000E8221 /* GMUStaticCluster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUStaticCluster.m; sourceTree = "<group>"; };
+		2D7A1E2823DDD6FE000E8221 /* GMUCluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUCluster.h; sourceTree = "<group>"; };
+		2D7A1E2923DDD6FE000E8221 /* GMUClusterItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUClusterItem.h; sourceTree = "<group>"; };
+		2D7A1E2B23DDD6FE000E8221 /* GMUKMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUKMLParser.m; sourceTree = "<group>"; };
+		2D7A1E2C23DDD6FE000E8221 /* GMUGeometryRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUGeometryRenderer.m; sourceTree = "<group>"; };
+		2D7A1E2D23DDD6FE000E8221 /* GMUGeoJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUGeoJSONParser.h; sourceTree = "<group>"; };
+		2D7A1E2F23DDD6FE000E8221 /* GMUGeometryCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUGeometryCollection.m; sourceTree = "<group>"; };
+		2D7A1E3023DDD6FE000E8221 /* GMUPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUPoint.h; sourceTree = "<group>"; };
+		2D7A1E3123DDD6FE000E8221 /* GMUStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUStyle.h; sourceTree = "<group>"; };
+		2D7A1E3223DDD6FE000E8221 /* GMUPlacemark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUPlacemark.m; sourceTree = "<group>"; };
+		2D7A1E3323DDD6FE000E8221 /* GMUPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUPolygon.m; sourceTree = "<group>"; };
+		2D7A1E3423DDD6FE000E8221 /* GMUPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUPair.h; sourceTree = "<group>"; };
+		2D7A1E3523DDD6FE000E8221 /* GMUGeometryContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUGeometryContainer.h; sourceTree = "<group>"; };
+		2D7A1E3623DDD6FE000E8221 /* GMUStyleMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUStyleMap.m; sourceTree = "<group>"; };
+		2D7A1E3723DDD6FE000E8221 /* GMUFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUFeature.m; sourceTree = "<group>"; };
+		2D7A1E3823DDD6FE000E8221 /* GMULineString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMULineString.h; sourceTree = "<group>"; };
+		2D7A1E3923DDD6FE000E8221 /* GMUGroundOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUGroundOverlay.m; sourceTree = "<group>"; };
+		2D7A1E3A23DDD6FE000E8221 /* GMUStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUStyle.m; sourceTree = "<group>"; };
+		2D7A1E3B23DDD6FE000E8221 /* GMUPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUPoint.m; sourceTree = "<group>"; };
+		2D7A1E3C23DDD6FE000E8221 /* GMUGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUGeometry.h; sourceTree = "<group>"; };
+		2D7A1E3D23DDD6FE000E8221 /* GMUGeometryCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUGeometryCollection.h; sourceTree = "<group>"; };
+		2D7A1E3E23DDD6FE000E8221 /* GMUPair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUPair.m; sourceTree = "<group>"; };
+		2D7A1E3F23DDD6FE000E8221 /* GMUPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUPolygon.h; sourceTree = "<group>"; };
+		2D7A1E4023DDD6FE000E8221 /* GMUPlacemark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUPlacemark.h; sourceTree = "<group>"; };
+		2D7A1E4123DDD6FE000E8221 /* GMUStyleMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUStyleMap.h; sourceTree = "<group>"; };
+		2D7A1E4223DDD6FE000E8221 /* GMUGroundOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUGroundOverlay.h; sourceTree = "<group>"; };
+		2D7A1E4323DDD6FE000E8221 /* GMULineString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMULineString.m; sourceTree = "<group>"; };
+		2D7A1E4423DDD6FE000E8221 /* GMUFeature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUFeature.h; sourceTree = "<group>"; };
+		2D7A1E4523DDD6FE000E8221 /* GMUKMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUKMLParser.h; sourceTree = "<group>"; };
+		2D7A1E4623DDD6FE000E8221 /* GMUGeometryRenderer+Testing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GMUGeometryRenderer+Testing.h"; sourceTree = "<group>"; };
+		2D7A1E4723DDD6FE000E8221 /* GMUGeoJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMUGeoJSONParser.m; sourceTree = "<group>"; };
+		2D7A1E4823DDD6FE000E8221 /* GMUGeometryRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUGeometryRenderer.h; sourceTree = "<group>"; };
+		2D7A1E6323DDD7D7000E8221 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		820D7E2A0995059A2ECA1FC3 /* Pods_DengueCheckerBeta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DengueCheckerBeta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADCC7D367AE959AA55158DED /* Pods-DengueCheckerBetaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DengueCheckerBetaUITests.debug.xcconfig"; path = "Target Support Files/Pods-DengueCheckerBetaUITests/Pods-DengueCheckerBetaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE16F283CCF01D33F16CDA3D /* Pods-DengueCheckerBeta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DengueCheckerBeta.release.xcconfig"; path = "Target Support Files/Pods-DengueCheckerBeta/Pods-DengueCheckerBeta.release.xcconfig"; sourceTree = "<group>"; };
+		CE2B1386ED3551CD55BD0163 /* Pods-DengueCheckerBetaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DengueCheckerBetaTests.debug.xcconfig"; path = "Target Support Files/Pods-DengueCheckerBetaTests/Pods-DengueCheckerBetaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7936BE5B9C6402757EE84BF /* Pods-DengueCheckerBetaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DengueCheckerBetaUITests.release.xcconfig"; path = "Target Support Files/Pods-DengueCheckerBetaUITests/Pods-DengueCheckerBetaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DA3190E18AF900CFF509D331 /* Pods-DengueCheckerBeta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DengueCheckerBeta.debug.xcconfig"; path = "Target Support Files/Pods-DengueCheckerBeta/Pods-DengueCheckerBeta.debug.xcconfig"; sourceTree = "<group>"; };
+		ED2B5AD7AADC01154882CC24 /* libPods-DengueCheckerBetaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DengueCheckerBetaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0B745F54D0E20518346049E /* libPods-DengueCheckerBetaUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DengueCheckerBetaUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CBAA2A921917C91006A2587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				203D21F807674E76B4BC6147 /* libPods-DengueCheckerBeta.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CBAA2BD21917C94006A2587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8604F6304253EF9042657BFC /* libPods-DengueCheckerBetaTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CBAA2C821917C94006A2587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83140CB20C6BCFDB29D4B524 /* libPods-DengueCheckerBetaUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0862D36074F117BB39E04C44 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA3190E18AF900CFF509D331 /* Pods-DengueCheckerBeta.debug.xcconfig */,
+				AE16F283CCF01D33F16CDA3D /* Pods-DengueCheckerBeta.release.xcconfig */,
+				CE2B1386ED3551CD55BD0163 /* Pods-DengueCheckerBetaTests.debug.xcconfig */,
+				2446298B343B728F4739ADD7 /* Pods-DengueCheckerBetaTests.release.xcconfig */,
+				ADCC7D367AE959AA55158DED /* Pods-DengueCheckerBetaUITests.debug.xcconfig */,
+				D7936BE5B9C6402757EE84BF /* Pods-DengueCheckerBetaUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1CBAA2A321917C91006A2587 = {
+			isa = PBXGroup;
+			children = (
+				2D7A1E6323DDD7D7000E8221 /* BridgingHeader.h */,
+				2D7A1DFE23DDD660000E8221 /* Google-Maps-iOS-Utils */,
+				1CBAA2AE21917C91006A2587 /* DengueCheckerBeta */,
+				1CBAA2C321917C94006A2587 /* DengueCheckerBetaTests */,
+				1CBAA2CE21917C94006A2587 /* DengueCheckerBetaUITests */,
+				1CBAA2AD21917C91006A2587 /* Products */,
+				0862D36074F117BB39E04C44 /* Pods */,
+				D95B2357E523B830CEC638AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1CBAA2AD21917C91006A2587 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CBAA2AC21917C91006A2587 /* DengueCheckerBeta.app */,
+				1CBAA2C021917C94006A2587 /* DengueCheckerBetaTests.xctest */,
+				1CBAA2CB21917C94006A2587 /* DengueCheckerBetaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CBAA2AE21917C91006A2587 /* DengueCheckerBeta */ = {
+			isa = PBXGroup;
+			children = (
+				2D1D577E240D7746003AAE20 /* dengue.geojson */,
+				2D1D577F240D7746003AAE20 /* dengue.kml */,
+				1CBAA2AF21917C91006A2587 /* AppDelegate.swift */,
+				1CBAA2B321917C92006A2587 /* Main.storyboard */,
+				1CBAA2DD219180FF006A2587 /* GoogleMapViewController.swift */,
+				1CBAA2B621917C94006A2587 /* Assets.xcassets */,
+				1CBAA2B821917C94006A2587 /* LaunchScreen.storyboard */,
+				1CBAA2BB21917C94006A2587 /* Info.plist */,
+			);
+			path = DengueCheckerBeta;
+			sourceTree = "<group>";
+		};
+		1CBAA2C321917C94006A2587 /* DengueCheckerBetaTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CBAA2C421917C94006A2587 /* placeAutocompleteTests.swift */,
+				1CBAA2C621917C94006A2587 /* Info.plist */,
+			);
+			path = DengueCheckerBetaTests;
+			sourceTree = "<group>";
+		};
+		1CBAA2CE21917C94006A2587 /* DengueCheckerBetaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1CBAA2CF21917C94006A2587 /* placeAutocompleteUITests.swift */,
+				1CBAA2D121917C95006A2587 /* Info.plist */,
+			);
+			path = DengueCheckerBetaUITests;
+			sourceTree = "<group>";
+		};
+		2D7A1DFE23DDD660000E8221 /* Google-Maps-iOS-Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2D7A1E0E23DDD6FE000E8221 /* Clustering */,
+				2D7A1E2A23DDD6FE000E8221 /* Geometry */,
+				2D7A1E0723DDD6FE000E8221 /* Heatmap */,
+				2D7A1DFF23DDD6FE000E8221 /* QuadTree */,
+			);
+			name = "Google-Maps-iOS-Utils";
+			path = "../../../Desktop/JJ's World/XCodeApps/DengueChecker/Google-Maps-iOS-Utils";
+			sourceTree = "<group>";
+		};
+		2D7A1DFF23DDD6FE000E8221 /* QuadTree */ = {
+			isa = PBXGroup;
+			children = (
+				2D7A1E0023DDD6FE000E8221 /* GQTPointQuadTree.m */,
+				2D7A1E0123DDD6FE000E8221 /* GQTPointQuadTreeItem.h */,
+				2D7A1E0223DDD6FE000E8221 /* GQTPointQuadTreeChild.m */,
+				2D7A1E0323DDD6FE000E8221 /* GQTPoint.h */,
+				2D7A1E0423DDD6FE000E8221 /* GQTPointQuadTree.h */,
+				2D7A1E0523DDD6FE000E8221 /* GQTPointQuadTreeChild.h */,
+				2D7A1E0623DDD6FE000E8221 /* GQTBounds.h */,
+			);
+			name = QuadTree;
+			path = "../../../../../Downloads/GitHub Misc/google-maps-ios-utils-master/src/QuadTree";
+			sourceTree = "<group>";
+		};
+		2D7A1E0723DDD6FE000E8221 /* Heatmap */ = {
+			isa = PBXGroup;
+			children = (
+				2D7A1E0823DDD6FE000E8221 /* GMUGradient.h */,
+				2D7A1E0923DDD6FE000E8221 /* GMUWeightedLatLng.m */,
+				2D7A1E0A23DDD6FE000E8221 /* GMUHeatmapTileLayer.h */,
+				2D7A1E0B23DDD6FE000E8221 /* GMUWeightedLatLng.h */,
+				2D7A1E0C23DDD6FE000E8221 /* GMUGradient.m */,
+				2D7A1E0D23DDD6FE000E8221 /* GMUHeatmapTileLayer.m */,
+			);
+			name = Heatmap;
+			path = "../../../../../Downloads/GitHub Misc/google-maps-ios-utils-master/src/Heatmap";
+			sourceTree = "<group>";
+		};
+		2D7A1E0E23DDD6FE000E8221 /* Clustering */ = {
+			isa = PBXGroup;
+			children = (
+				2D7A1E0F23DDD6FE000E8221 /* GMUClusterManager.m */,
+				2D7A1E1023DDD6FE000E8221 /* GMUStaticCluster.h */,
+				2D7A1E1123DDD6FE000E8221 /* GMUMarkerClustering.h */,
+				2D7A1E1223DDD6FE000E8221 /* Algo */,
+				2D7A1E1C23DDD6FE000E8221 /* GMUClusterManager.h */,
+				2D7A1E1D23DDD6FE000E8221 /* GMUClusterManager+Testing.h */,
+				2D7A1E1E23DDD6FE000E8221 /* View */,
+				2D7A1E2723DDD6FE000E8221 /* GMUStaticCluster.m */,
+				2D7A1E2823DDD6FE000E8221 /* GMUCluster.h */,
+				2D7A1E2923DDD6FE000E8221 /* GMUClusterItem.h */,
+			);
+			name = Clustering;
+			path = "../../../../../Downloads/GitHub Misc/google-maps-ios-utils-master/src/Clustering";
+			sourceTree = "<group>";
+		};
+		2D7A1E1223DDD6FE000E8221 /* Algo */ = {
+			isa = PBXGroup;
+			children = (
+				2D7A1E1323DDD6FE000E8221 /* GMUGridBasedClusterAlgorithm.m */,
+				2D7A1E1423DDD6FE000E8221 /* GMUClusterAlgorithm.h */,
+				2D7A1E1523DDD6FE000E8221 /* GMUNonHierarchicalDistanceBasedAlgorithm.h */,
+				2D7A1E1623DDD6FE000E8221 /* GMUWrappingDictionaryKey.m */,
+				2D7A1E1723DDD6FE000E8221 /* GMUSimpleClusterAlgorithm.m */,
+				2D7A1E1823DDD6FE000E8221 /* GMUGridBasedClusterAlgorithm.h */,
+				2D7A1E1923DDD6FE000E8221 /* GMUNonHierarchicalDistanceBasedAlgorithm.m */,
+				2D7A1E1A23DDD6FE000E8221 /* GMUSimpleClusterAlgorithm.h */,
+				2D7A1E1B23DDD6FE000E8221 /* GMUWrappingDictionaryKey.h */,
+			);
+			path = Algo;
+			sourceTree = "<group>";
+		};
+		2D7A1E1E23DDD6FE000E8221 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D7A1E1F23DDD6FE000E8221 /* GMUClusterIconGenerator.h */,
+				2D7A1E2023DDD6FE000E8221 /* GMUClusterRenderer.h */,
+				2D7A1E2123DDD6FE000E8221 /* GMUDefaultClusterRenderer+Testing.h */,
+				2D7A1E2223DDD6FE000E8221 /* GMUDefaultClusterRenderer.m */,
+				2D7A1E2323DDD6FE000E8221 /* GMUDefaultClusterIconGenerator.h */,
+				2D7A1E2423DDD6FE000E8221 /* GMUDefaultClusterIconGenerator.m */,
+				2D7A1E2523DDD6FE000E8221 /* GMUDefaultClusterRenderer.h */,
+				2D7A1E2623DDD6FE000E8221 /* GMUDefaultClusterIconGenerator+Testing.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2D7A1E2A23DDD6FE000E8221 /* Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				2D7A1E2B23DDD6FE000E8221 /* GMUKMLParser.m */,
+				2D7A1E2C23DDD6FE000E8221 /* GMUGeometryRenderer.m */,
+				2D7A1E2D23DDD6FE000E8221 /* GMUGeoJSONParser.h */,
+				2D7A1E2E23DDD6FE000E8221 /* Model */,
+				2D7A1E4523DDD6FE000E8221 /* GMUKMLParser.h */,
+				2D7A1E4623DDD6FE000E8221 /* GMUGeometryRenderer+Testing.h */,
+				2D7A1E4723DDD6FE000E8221 /* GMUGeoJSONParser.m */,
+				2D7A1E4823DDD6FE000E8221 /* GMUGeometryRenderer.h */,
+			);
+			name = Geometry;
+			path = "../../../../../Downloads/GitHub Misc/google-maps-ios-utils-master/src/Geometry";
+			sourceTree = "<group>";
+		};
+		2D7A1E2E23DDD6FE000E8221 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D7A1E2F23DDD6FE000E8221 /* GMUGeometryCollection.m */,
+				2D7A1E3023DDD6FE000E8221 /* GMUPoint.h */,
+				2D7A1E3123DDD6FE000E8221 /* GMUStyle.h */,
+				2D7A1E3223DDD6FE000E8221 /* GMUPlacemark.m */,
+				2D7A1E3323DDD6FE000E8221 /* GMUPolygon.m */,
+				2D7A1E3423DDD6FE000E8221 /* GMUPair.h */,
+				2D7A1E3523DDD6FE000E8221 /* GMUGeometryContainer.h */,
+				2D7A1E3623DDD6FE000E8221 /* GMUStyleMap.m */,
+				2D7A1E3723DDD6FE000E8221 /* GMUFeature.m */,
+				2D7A1E3823DDD6FE000E8221 /* GMULineString.h */,
+				2D7A1E3923DDD6FE000E8221 /* GMUGroundOverlay.m */,
+				2D7A1E3A23DDD6FE000E8221 /* GMUStyle.m */,
+				2D7A1E3B23DDD6FE000E8221 /* GMUPoint.m */,
+				2D7A1E3C23DDD6FE000E8221 /* GMUGeometry.h */,
+				2D7A1E3D23DDD6FE000E8221 /* GMUGeometryCollection.h */,
+				2D7A1E3E23DDD6FE000E8221 /* GMUPair.m */,
+				2D7A1E3F23DDD6FE000E8221 /* GMUPolygon.h */,
+				2D7A1E4023DDD6FE000E8221 /* GMUPlacemark.h */,
+				2D7A1E4123DDD6FE000E8221 /* GMUStyleMap.h */,
+				2D7A1E4223DDD6FE000E8221 /* GMUGroundOverlay.h */,
+				2D7A1E4323DDD6FE000E8221 /* GMULineString.m */,
+				2D7A1E4423DDD6FE000E8221 /* GMUFeature.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D95B2357E523B830CEC638AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D476E35240EA09A003342DC /* SwiftyJSON.framework */,
+				2D476E32240EA098003342DC /* SwiftSoup.framework */,
+				2D476E2E240EA095003342DC /* Alamofire.framework */,
+				820D7E2A0995059A2ECA1FC3 /* Pods_DengueCheckerBeta.framework */,
+				04BD8CCA4CCCBE9706852914 /* libPods-DengueCheckerBeta.a */,
+				ED2B5AD7AADC01154882CC24 /* libPods-DengueCheckerBetaTests.a */,
+				F0B745F54D0E20518346049E /* libPods-DengueCheckerBetaUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CBAA2AB21917C91006A2587 /* DengueCheckerBeta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CBAA2D421917C95006A2587 /* Build configuration list for PBXNativeTarget "DengueCheckerBeta" */;
+			buildPhases = (
+				09901CF9D9024C7E6CE66A0C /* [CP] Check Pods Manifest.lock */,
+				1CBAA2A821917C91006A2587 /* Sources */,
+				1CBAA2A921917C91006A2587 /* Frameworks */,
+				1CBAA2AA21917C91006A2587 /* Resources */,
+				75774FE50A9121E553CBC377 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DengueCheckerBeta;
+			productName = placeAutocomplete;
+			productReference = 1CBAA2AC21917C91006A2587 /* DengueCheckerBeta.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1CBAA2BF21917C94006A2587 /* DengueCheckerBetaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CBAA2D721917C95006A2587 /* Build configuration list for PBXNativeTarget "DengueCheckerBetaTests" */;
+			buildPhases = (
+				AC3352F10CE5999F742A94D8 /* [CP] Check Pods Manifest.lock */,
+				1CBAA2BC21917C94006A2587 /* Sources */,
+				1CBAA2BD21917C94006A2587 /* Frameworks */,
+				1CBAA2BE21917C94006A2587 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CBAA2C221917C94006A2587 /* PBXTargetDependency */,
+			);
+			name = DengueCheckerBetaTests;
+			productName = placeAutocompleteTests;
+			productReference = 1CBAA2C021917C94006A2587 /* DengueCheckerBetaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1CBAA2CA21917C94006A2587 /* DengueCheckerBetaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CBAA2DA21917C95006A2587 /* Build configuration list for PBXNativeTarget "DengueCheckerBetaUITests" */;
+			buildPhases = (
+				F59F3AD6181AB896C395AB75 /* [CP] Check Pods Manifest.lock */,
+				1CBAA2C721917C94006A2587 /* Sources */,
+				1CBAA2C821917C94006A2587 /* Frameworks */,
+				1CBAA2C921917C94006A2587 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CBAA2CD21917C94006A2587 /* PBXTargetDependency */,
+			);
+			name = DengueCheckerBetaUITests;
+			productName = placeAutocompleteUITests;
+			productReference = 1CBAA2CB21917C94006A2587 /* DengueCheckerBetaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CBAA2A421917C91006A2587 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = mohawker;
+				TargetAttributes = {
+					1CBAA2AB21917C91006A2587 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					1CBAA2BF21917C94006A2587 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 1CBAA2AB21917C91006A2587;
+					};
+					1CBAA2CA21917C94006A2587 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 1CBAA2AB21917C91006A2587;
+					};
+				};
+			};
+			buildConfigurationList = 1CBAA2A721917C91006A2587 /* Build configuration list for PBXProject "DengueCheckerBeta" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CBAA2A321917C91006A2587;
+			productRefGroup = 1CBAA2AD21917C91006A2587 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CBAA2AB21917C91006A2587 /* DengueCheckerBeta */,
+				1CBAA2BF21917C94006A2587 /* DengueCheckerBetaTests */,
+				1CBAA2CA21917C94006A2587 /* DengueCheckerBetaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CBAA2AA21917C91006A2587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CBAA2BA21917C94006A2587 /* LaunchScreen.storyboard in Resources */,
+				1CBAA2B721917C94006A2587 /* Assets.xcassets in Resources */,
+				2D1D5781240D7746003AAE20 /* dengue.kml in Resources */,
+				2D1D5780240D7746003AAE20 /* dengue.geojson in Resources */,
+				1CBAA2B521917C92006A2587 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CBAA2BE21917C94006A2587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CBAA2C921917C94006A2587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09901CF9D9024C7E6CE66A0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DengueCheckerBeta-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75774FE50A9121E553CBC377 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DengueCheckerBeta/Pods-DengueCheckerBeta-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DengueCheckerBeta/Pods-DengueCheckerBeta-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DengueCheckerBeta/Pods-DengueCheckerBeta-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC3352F10CE5999F742A94D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DengueCheckerBetaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F59F3AD6181AB896C395AB75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DengueCheckerBetaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CBAA2A821917C91006A2587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D7A1E4B23DDD6FE000E8221 /* GMUWeightedLatLng.m in Sources */,
+				2D7A1E4923DDD6FE000E8221 /* GQTPointQuadTree.m in Sources */,
+				2D7A1E5623DDD6FE000E8221 /* GMUKMLParser.m in Sources */,
+				2D7A1E5323DDD6FE000E8221 /* GMUDefaultClusterRenderer.m in Sources */,
+				2D7A1E5923DDD6FE000E8221 /* GMUPlacemark.m in Sources */,
+				2D7A1E4F23DDD6FE000E8221 /* GMUGridBasedClusterAlgorithm.m in Sources */,
+				2D7A1E5423DDD6FE000E8221 /* GMUDefaultClusterIconGenerator.m in Sources */,
+				1CBAA2B021917C91006A2587 /* AppDelegate.swift in Sources */,
+				2D7A1E6123DDD6FE000E8221 /* GMULineString.m in Sources */,
+				2D7A1E4D23DDD6FE000E8221 /* GMUHeatmapTileLayer.m in Sources */,
+				1CBAA2DE219180FF006A2587 /* GoogleMapViewController.swift in Sources */,
+				2D7A1E4A23DDD6FE000E8221 /* GQTPointQuadTreeChild.m in Sources */,
+				2D7A1E6223DDD6FE000E8221 /* GMUGeoJSONParser.m in Sources */,
+				2D7A1E5123DDD6FE000E8221 /* GMUSimpleClusterAlgorithm.m in Sources */,
+				2D7A1E5A23DDD6FE000E8221 /* GMUPolygon.m in Sources */,
+				2D7A1E5023DDD6FE000E8221 /* GMUWrappingDictionaryKey.m in Sources */,
+				2D7A1E5B23DDD6FE000E8221 /* GMUStyleMap.m in Sources */,
+				2D7A1E6023DDD6FE000E8221 /* GMUPair.m in Sources */,
+				2D7A1E4E23DDD6FE000E8221 /* GMUClusterManager.m in Sources */,
+				2D7A1E4C23DDD6FE000E8221 /* GMUGradient.m in Sources */,
+				2D7A1E5223DDD6FE000E8221 /* GMUNonHierarchicalDistanceBasedAlgorithm.m in Sources */,
+				2D7A1E5D23DDD6FE000E8221 /* GMUGroundOverlay.m in Sources */,
+				2D7A1E5F23DDD6FE000E8221 /* GMUPoint.m in Sources */,
+				2D7A1E5E23DDD6FE000E8221 /* GMUStyle.m in Sources */,
+				2D7A1E5C23DDD6FE000E8221 /* GMUFeature.m in Sources */,
+				2D7A1E5723DDD6FE000E8221 /* GMUGeometryRenderer.m in Sources */,
+				2D7A1E5523DDD6FE000E8221 /* GMUStaticCluster.m in Sources */,
+				2D7A1E5823DDD6FE000E8221 /* GMUGeometryCollection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CBAA2BC21917C94006A2587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CBAA2C521917C94006A2587 /* placeAutocompleteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CBAA2C721917C94006A2587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CBAA2D021917C94006A2587 /* placeAutocompleteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CBAA2C221917C94006A2587 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CBAA2AB21917C91006A2587 /* DengueCheckerBeta */;
+			targetProxy = 1CBAA2C121917C94006A2587 /* PBXContainerItemProxy */;
+		};
+		1CBAA2CD21917C94006A2587 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CBAA2AB21917C91006A2587 /* DengueCheckerBeta */;
+			targetProxy = 1CBAA2CC21917C94006A2587 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1CBAA2B321917C92006A2587 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CBAA2B421917C92006A2587 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1CBAA2B821917C94006A2587 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CBAA2B921917C94006A2587 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CBAA2D221917C95006A2587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = BridgingHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1CBAA2D321917C95006A2587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = BridgingHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CBAA2D521917C95006A2587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA3190E18AF900CFF509D331 /* Pods-DengueCheckerBeta.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54GHL5GJ7R;
+				INFOPLIST_FILE = DengueCheckerBeta/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mohawker.DengueCheckerBeta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1CBAA2D621917C95006A2587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE16F283CCF01D33F16CDA3D /* Pods-DengueCheckerBeta.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54GHL5GJ7R;
+				INFOPLIST_FILE = DengueCheckerBeta/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mohawker.DengueCheckerBeta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1CBAA2D821917C95006A2587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE2B1386ED3551CD55BD0163 /* Pods-DengueCheckerBetaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22MQY5GLD5;
+				INFOPLIST_FILE = placeAutocompleteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.placeAutocompleteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DengueCheckerBeta.app/DengueCheckerBeta";
+			};
+			name = Debug;
+		};
+		1CBAA2D921917C95006A2587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2446298B343B728F4739ADD7 /* Pods-DengueCheckerBetaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22MQY5GLD5;
+				INFOPLIST_FILE = placeAutocompleteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.placeAutocompleteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DengueCheckerBeta.app/DengueCheckerBeta";
+			};
+			name = Release;
+		};
+		1CBAA2DB21917C95006A2587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADCC7D367AE959AA55158DED /* Pods-DengueCheckerBetaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22MQY5GLD5;
+				INFOPLIST_FILE = placeAutocompleteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.placeAutocompleteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = placeAutocomplete;
+			};
+			name = Debug;
+		};
+		1CBAA2DC21917C95006A2587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7936BE5B9C6402757EE84BF /* Pods-DengueCheckerBetaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22MQY5GLD5;
+				INFOPLIST_FILE = placeAutocompleteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.placeAutocompleteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = placeAutocomplete;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CBAA2A721917C91006A2587 /* Build configuration list for PBXProject "DengueCheckerBeta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CBAA2D221917C95006A2587 /* Debug */,
+				1CBAA2D321917C95006A2587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CBAA2D421917C95006A2587 /* Build configuration list for PBXNativeTarget "DengueCheckerBeta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CBAA2D521917C95006A2587 /* Debug */,
+				1CBAA2D621917C95006A2587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CBAA2D721917C95006A2587 /* Build configuration list for PBXNativeTarget "DengueCheckerBetaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CBAA2D821917C95006A2587 /* Debug */,
+				1CBAA2D921917C95006A2587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CBAA2DA21917C95006A2587 /* Build configuration list for PBXNativeTarget "DengueCheckerBetaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CBAA2DB21917C95006A2587 /* Debug */,
+				1CBAA2DC21917C95006A2587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CBAA2A421917C91006A2587 /* Project object */;
+}
